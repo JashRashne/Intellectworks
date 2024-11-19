@@ -1,202 +1,40 @@
-[debug] [2024-11-16T17:21:18.933Z] ----------------------------------------------------------------------
-[debug] [2024-11-16T17:21:18.934Z] Command:       /Users/jash/.nvm/versions/node/v23.2.0/bin/node /Users/jash/.nvm/versions/node/v23.2.0/bin/firebase emulators:start --only functions
-[debug] [2024-11-16T17:21:18.934Z] CLI Version:   13.25.0
-[debug] [2024-11-16T17:21:18.934Z] Platform:      darwin
-[debug] [2024-11-16T17:21:18.935Z] Node Version:  v23.2.0
-[debug] [2024-11-16T17:21:18.935Z] Time:          Sat Nov 16 2024 22:51:18 GMT+0530 (India Standard Time)
-[debug] [2024-11-16T17:21:18.935Z] ----------------------------------------------------------------------
+[debug] [2024-11-19T06:08:08.038Z] ----------------------------------------------------------------------
+[debug] [2024-11-19T06:08:08.040Z] Command:       /Users/jash/.nvm/versions/node/v23.2.0/bin/node /Users/jash/.nvm/versions/node/v23.2.0/bin/firebase emulators:start --only functions
+[debug] [2024-11-19T06:08:08.040Z] CLI Version:   13.25.0
+[debug] [2024-11-19T06:08:08.040Z] Platform:      darwin
+[debug] [2024-11-19T06:08:08.040Z] Node Version:  v23.2.0
+[debug] [2024-11-19T06:08:08.040Z] Time:          Tue Nov 19 2024 11:38:08 GMT+0530 (India Standard Time)
+[debug] [2024-11-19T06:08:08.040Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2024-11-16T17:21:18.991Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2024-11-16T17:21:18.991Z] > authorizing via signed-in user (electronjash@gmail.com)
+[debug] [2024-11-19T06:08:08.095Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-11-19T06:08:08.096Z] > authorizing via signed-in user (electronjash@gmail.com)
 [info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
-[debug] [2024-11-16T17:21:19.124Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2024-11-16T17:21:19.124Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
-[debug] [2024-11-16T17:21:19.127Z] [hub] writing locator at /var/folders/0q/bhv27mbn5td9vdjj77y39n0w0000gn/T/hub-intellectworks-task1.json
-[debug] [2024-11-16T17:21:19.216Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2024-11-16T17:21:19.216Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2024-11-16T17:21:19.216Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2024-11-16T17:21:19.216Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}],"tasks":[{"address":"127.0.0.1","family":"IPv4","port":9499}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[debug] [2024-11-19T06:08:08.201Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-11-19T06:08:08.202Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2024-11-19T06:08:08.204Z] [hub] writing locator at /var/folders/0q/bhv27mbn5td9vdjj77y39n0w0000gn/T/hub-intellectworks-task1.json
+[debug] [2024-11-19T06:08:08.294Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-11-19T06:08:08.294Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-11-19T06:08:08.294Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-11-19T06:08:08.294Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}],"tasks":[{"address":"127.0.0.1","family":"IPv4","port":9499}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
 [warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage, dataconnect {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage, dataconnect\u001b[22m"}}
-[debug] [2024-11-16T17:21:19.219Z] defaultcredentials: writing to file /Users/jash/.config/firebase/electronjash_gmail_com_application_default_credentials.json
-[debug] [2024-11-16T17:21:19.221Z] Setting GAC to /Users/jash/.config/firebase/electronjash_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/jash/.config/firebase/electronjash_gmail_com_application_default_credentials.json"}}
-[debug] [2024-11-16T17:21:19.221Z] Checked if tokens are valid: true, expires at: 1731779754733
-[debug] [2024-11-16T17:21:19.222Z] Checked if tokens are valid: true, expires at: 1731779754733
-[debug] [2024-11-16T17:21:19.222Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/intellectworks-task1/adminSdkConfig [none]
-[debug] [2024-11-16T17:21:19.776Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/intellectworks-task1/adminSdkConfig 200
-[debug] [2024-11-16T17:21:19.776Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/intellectworks-task1/adminSdkConfig {"projectId":"intellectworks-task1","storageBucket":"intellectworks-task1.firebasestorage.app"}
-[info] i  ui: downloading ui-v1.14.0.zip... {"metadata":{"emulator":{"name":"ui"},"message":"downloading ui-v1.14.0.zip..."}}
-[debug] [2024-11-16T17:21:19.791Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.14.0.zip 
-[debug] [2024-11-16T17:21:20.286Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.14.0.zip 200
-[debug] [2024-11-16T17:21:20.286Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.14.0.zip [stream]
-[debug] [2024-11-16T17:21:21.077Z] Data is 3615311
-[debug] [2024-11-16T17:21:21.077Z] [unzip] Entry: client/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
-[debug] [2024-11-16T17:21:21.077Z] [unzip] Processing entry: client/
-[debug] [2024-11-16T17:21:21.077Z] [unzip] mkdir: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client/
-[debug] [2024-11-16T17:21:21.077Z] [unzip] Entry: client/favicon-16x16.png (compressed_size=293 bytes, uncompressed_size=293 bytes)
-[debug] [2024-11-16T17:21:21.077Z] [unzip] Processing entry: client/favicon-16x16.png
-[debug] [2024-11-16T17:21:21.078Z] [unzip] else mkdir: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client
-[debug] [2024-11-16T17:21:21.078Z] [unzip] Writing file: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client/favicon-16x16.png
-[debug] [2024-11-16T17:21:21.078Z] [unzip] Entry: client/safari-pinned-tab.svg (compressed_size=1433 bytes, uncompressed_size=2611 bytes)
-[debug] [2024-11-16T17:21:21.078Z] [unzip] Processing entry: client/safari-pinned-tab.svg
-[debug] [2024-11-16T17:21:21.078Z] [unzip] else mkdir: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client
-[debug] [2024-11-16T17:21:21.078Z] [unzip] deflating: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client/safari-pinned-tab.svg
-[debug] [2024-11-16T17:21:21.081Z] [unzip] Entry: client/favicon.ico (compressed_size=2933 bytes, uncompressed_size=13294 bytes)
-[debug] [2024-11-16T17:21:21.081Z] [unzip] Processing entry: client/favicon.ico
-[debug] [2024-11-16T17:21:21.081Z] [unzip] else mkdir: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client
-[debug] [2024-11-16T17:21:21.081Z] [unzip] deflating: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client/favicon.ico
-[debug] [2024-11-16T17:21:21.082Z] [unzip] Entry: client/index.html (compressed_size=1363 bytes, uncompressed_size=3071 bytes)
-[debug] [2024-11-16T17:21:21.082Z] [unzip] Processing entry: client/index.html
-[debug] [2024-11-16T17:21:21.082Z] [unzip] else mkdir: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client
-[debug] [2024-11-16T17:21:21.082Z] [unzip] deflating: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client/index.html
-[debug] [2024-11-16T17:21:21.083Z] [unzip] Entry: client/android-chrome-192x192.png (compressed_size=2684 bytes, uncompressed_size=2684 bytes)
-[debug] [2024-11-16T17:21:21.083Z] [unzip] Processing entry: client/android-chrome-192x192.png
-[debug] [2024-11-16T17:21:21.083Z] [unzip] else mkdir: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client
-[debug] [2024-11-16T17:21:21.083Z] [unzip] Writing file: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client/android-chrome-192x192.png
-[debug] [2024-11-16T17:21:21.083Z] [unzip] Entry: client/apple-touch-icon.png (compressed_size=2123 bytes, uncompressed_size=2152 bytes)
-[debug] [2024-11-16T17:21:21.084Z] [unzip] Processing entry: client/apple-touch-icon.png
-[debug] [2024-11-16T17:21:21.084Z] [unzip] else mkdir: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client
-[debug] [2024-11-16T17:21:21.084Z] [unzip] deflating: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client/apple-touch-icon.png
-[debug] [2024-11-16T17:21:21.084Z] [unzip] Entry: client/android-chrome-512x512.png (compressed_size=5369 bytes, uncompressed_size=5411 bytes)
-[debug] [2024-11-16T17:21:21.084Z] [unzip] Processing entry: client/android-chrome-512x512.png
-[debug] [2024-11-16T17:21:21.084Z] [unzip] else mkdir: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client
-[debug] [2024-11-16T17:21:21.084Z] [unzip] deflating: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client/android-chrome-512x512.png
-[debug] [2024-11-16T17:21:21.085Z] [unzip] Entry: client/manifest.json (compressed_size=245 bytes, uncompressed_size=551 bytes)
-[debug] [2024-11-16T17:21:21.085Z] [unzip] Processing entry: client/manifest.json
-[debug] [2024-11-16T17:21:21.085Z] [unzip] else mkdir: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client
-[debug] [2024-11-16T17:21:21.085Z] [unzip] deflating: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client/manifest.json
-[debug] [2024-11-16T17:21:21.085Z] [unzip] Entry: client/robots.txt (compressed_size=26 bytes, uncompressed_size=26 bytes)
-[debug] [2024-11-16T17:21:21.085Z] [unzip] Processing entry: client/robots.txt
-[debug] [2024-11-16T17:21:21.085Z] [unzip] else mkdir: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client
-[debug] [2024-11-16T17:21:21.085Z] [unzip] Writing file: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client/robots.txt
-[debug] [2024-11-16T17:21:21.086Z] [unzip] Entry: client/mstile-150x150.png (compressed_size=2034 bytes, uncompressed_size=2034 bytes)
-[debug] [2024-11-16T17:21:21.086Z] [unzip] Processing entry: client/mstile-150x150.png
-[debug] [2024-11-16T17:21:21.086Z] [unzip] else mkdir: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client
-[debug] [2024-11-16T17:21:21.086Z] [unzip] Writing file: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client/mstile-150x150.png
-[debug] [2024-11-16T17:21:21.086Z] [unzip] Entry: client/assets/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
-[debug] [2024-11-16T17:21:21.086Z] [unzip] Processing entry: client/assets/
-[debug] [2024-11-16T17:21:21.086Z] [unzip] mkdir: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client/assets/
-[debug] [2024-11-16T17:21:21.086Z] [unzip] Entry: client/assets/index-ClZTY_JS.js.map (compressed_size=2328270 bytes, uncompressed_size=9947004 bytes)
-[debug] [2024-11-16T17:21:21.086Z] [unzip] Processing entry: client/assets/index-ClZTY_JS.js.map
-[debug] [2024-11-16T17:21:21.086Z] [unzip] else mkdir: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client/assets
-[debug] [2024-11-16T17:21:21.086Z] [unzip] deflating: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client/assets/index-ClZTY_JS.js.map
-[debug] [2024-11-16T17:21:21.116Z] [unzip] Entry: client/assets/index-ClZTY_JS.js (compressed_size=567195 bytes, uncompressed_size=2035940 bytes)
-[debug] [2024-11-16T17:21:21.116Z] [unzip] Processing entry: client/assets/index-ClZTY_JS.js
-[debug] [2024-11-16T17:21:21.116Z] [unzip] else mkdir: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client/assets
-[debug] [2024-11-16T17:21:21.116Z] [unzip] deflating: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client/assets/index-ClZTY_JS.js
-[debug] [2024-11-16T17:21:21.122Z] [unzip] Entry: client/assets/index-BdgySamB.css (compressed_size=35979 bytes, uncompressed_size=298654 bytes)
-[debug] [2024-11-16T17:21:21.122Z] [unzip] Processing entry: client/assets/index-BdgySamB.css
-[debug] [2024-11-16T17:21:21.122Z] [unzip] else mkdir: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client/assets
-[debug] [2024-11-16T17:21:21.122Z] [unzip] deflating: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client/assets/index-BdgySamB.css
-[debug] [2024-11-16T17:21:21.125Z] [unzip] Entry: client/assets/extensions/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
-[debug] [2024-11-16T17:21:21.125Z] [unzip] Processing entry: client/assets/extensions/
-[debug] [2024-11-16T17:21:21.125Z] [unzip] mkdir: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client/assets/extensions/
-[debug] [2024-11-16T17:21:21.125Z] [unzip] Entry: client/assets/extensions/default-extension.png (compressed_size=1646 bytes, uncompressed_size=1657 bytes)
-[debug] [2024-11-16T17:21:21.125Z] [unzip] Processing entry: client/assets/extensions/default-extension.png
-[debug] [2024-11-16T17:21:21.125Z] [unzip] else mkdir: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client/assets/extensions
-[debug] [2024-11-16T17:21:21.125Z] [unzip] deflating: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client/assets/extensions/default-extension.png
-[debug] [2024-11-16T17:21:21.126Z] [unzip] Entry: client/assets/img/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
-[debug] [2024-11-16T17:21:21.126Z] [unzip] Processing entry: client/assets/img/
-[debug] [2024-11-16T17:21:21.126Z] [unzip] mkdir: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client/assets/img/
-[debug] [2024-11-16T17:21:21.126Z] [unzip] Entry: client/assets/img/database.png (compressed_size=29449 bytes, uncompressed_size=29988 bytes)
-[debug] [2024-11-16T17:21:21.126Z] [unzip] Processing entry: client/assets/img/database.png
-[debug] [2024-11-16T17:21:21.126Z] [unzip] else mkdir: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client/assets/img
-[debug] [2024-11-16T17:21:21.126Z] [unzip] deflating: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client/assets/img/database.png
-[debug] [2024-11-16T17:21:21.126Z] [unzip] Entry: client/assets/provider-icons/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
-[debug] [2024-11-16T17:21:21.126Z] [unzip] Processing entry: client/assets/provider-icons/
-[debug] [2024-11-16T17:21:21.126Z] [unzip] mkdir: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client/assets/provider-icons/
-[debug] [2024-11-16T17:21:21.126Z] [unzip] Entry: client/assets/provider-icons/auth_service_saml.svg (compressed_size=575 bytes, uncompressed_size=1226 bytes)
-[debug] [2024-11-16T17:21:21.126Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_saml.svg
-[debug] [2024-11-16T17:21:21.127Z] [unzip] else mkdir: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client/assets/provider-icons
-[debug] [2024-11-16T17:21:21.127Z] [unzip] deflating: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client/assets/provider-icons/auth_service_saml.svg
-[debug] [2024-11-16T17:21:21.127Z] [unzip] Entry: client/assets/provider-icons/auth_service_phone.svg (compressed_size=261 bytes, uncompressed_size=414 bytes)
-[debug] [2024-11-16T17:21:21.127Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_phone.svg
-[debug] [2024-11-16T17:21:21.127Z] [unzip] else mkdir: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client/assets/provider-icons
-[debug] [2024-11-16T17:21:21.127Z] [unzip] deflating: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client/assets/provider-icons/auth_service_phone.svg
-[debug] [2024-11-16T17:21:21.127Z] [unzip] Entry: client/assets/provider-icons/auth_service_facebook.svg (compressed_size=289 bytes, uncompressed_size=457 bytes)
-[debug] [2024-11-16T17:21:21.127Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_facebook.svg
-[debug] [2024-11-16T17:21:21.127Z] [unzip] else mkdir: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client/assets/provider-icons
-[debug] [2024-11-16T17:21:21.127Z] [unzip] deflating: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client/assets/provider-icons/auth_service_facebook.svg
-[debug] [2024-11-16T17:21:21.127Z] [unzip] Entry: client/assets/provider-icons/auth_service_game_center.svg (compressed_size=991 bytes, uncompressed_size=3921 bytes)
-[debug] [2024-11-16T17:21:21.127Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_game_center.svg
-[debug] [2024-11-16T17:21:21.127Z] [unzip] else mkdir: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client/assets/provider-icons
-[debug] [2024-11-16T17:21:21.127Z] [unzip] deflating: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client/assets/provider-icons/auth_service_game_center.svg
-[debug] [2024-11-16T17:21:21.128Z] [unzip] Entry: client/assets/provider-icons/auth_service_apple.svg (compressed_size=230 bytes, uncompressed_size=334 bytes)
-[debug] [2024-11-16T17:21:21.128Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_apple.svg
-[debug] [2024-11-16T17:21:21.128Z] [unzip] else mkdir: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client/assets/provider-icons
-[debug] [2024-11-16T17:21:21.128Z] [unzip] deflating: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client/assets/provider-icons/auth_service_apple.svg
-[debug] [2024-11-16T17:21:21.128Z] [unzip] Entry: client/assets/provider-icons/auth_service_github.svg (compressed_size=466 bytes, uncompressed_size=838 bytes)
-[debug] [2024-11-16T17:21:21.128Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_github.svg
-[debug] [2024-11-16T17:21:21.128Z] [unzip] else mkdir: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client/assets/provider-icons
-[debug] [2024-11-16T17:21:21.128Z] [unzip] deflating: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client/assets/provider-icons/auth_service_github.svg
-[debug] [2024-11-16T17:21:21.128Z] [unzip] Entry: client/assets/provider-icons/auth_service_mslive.svg (compressed_size=203 bytes, uncompressed_size=378 bytes)
-[debug] [2024-11-16T17:21:21.128Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_mslive.svg
-[debug] [2024-11-16T17:21:21.128Z] [unzip] else mkdir: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client/assets/provider-icons
-[debug] [2024-11-16T17:21:21.128Z] [unzip] deflating: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client/assets/provider-icons/auth_service_mslive.svg
-[debug] [2024-11-16T17:21:21.128Z] [unzip] Entry: client/assets/provider-icons/auth_service_yahoo.svg (compressed_size=577 bytes, uncompressed_size=1182 bytes)
-[debug] [2024-11-16T17:21:21.128Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_yahoo.svg
-[debug] [2024-11-16T17:21:21.128Z] [unzip] else mkdir: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client/assets/provider-icons
-[debug] [2024-11-16T17:21:21.128Z] [unzip] deflating: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client/assets/provider-icons/auth_service_yahoo.svg
-[debug] [2024-11-16T17:21:21.129Z] [unzip] Entry: client/assets/provider-icons/auth_service_twitter.svg (compressed_size=444 bytes, uncompressed_size=751 bytes)
-[debug] [2024-11-16T17:21:21.129Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_twitter.svg
-[debug] [2024-11-16T17:21:21.129Z] [unzip] else mkdir: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client/assets/provider-icons
-[debug] [2024-11-16T17:21:21.129Z] [unzip] deflating: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client/assets/provider-icons/auth_service_twitter.svg
-[debug] [2024-11-16T17:21:21.129Z] [unzip] Entry: client/assets/provider-icons/auth_service_play_games.svg (compressed_size=565 bytes, uncompressed_size=1173 bytes)
-[debug] [2024-11-16T17:21:21.129Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_play_games.svg
-[debug] [2024-11-16T17:21:21.129Z] [unzip] else mkdir: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client/assets/provider-icons
-[debug] [2024-11-16T17:21:21.129Z] [unzip] deflating: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client/assets/provider-icons/auth_service_play_games.svg
-[debug] [2024-11-16T17:21:21.129Z] [unzip] Entry: client/assets/provider-icons/auth_service_email.svg (compressed_size=228 bytes, uncompressed_size=326 bytes)
-[debug] [2024-11-16T17:21:21.129Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_email.svg
-[debug] [2024-11-16T17:21:21.129Z] [unzip] else mkdir: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client/assets/provider-icons
-[debug] [2024-11-16T17:21:21.129Z] [unzip] deflating: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client/assets/provider-icons/auth_service_email.svg
-[debug] [2024-11-16T17:21:21.129Z] [unzip] Entry: client/assets/provider-icons/auth_service_google.svg (compressed_size=409 bytes, uncompressed_size=720 bytes)
-[debug] [2024-11-16T17:21:21.129Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_google.svg
-[debug] [2024-11-16T17:21:21.129Z] [unzip] else mkdir: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client/assets/provider-icons
-[debug] [2024-11-16T17:21:21.130Z] [unzip] deflating: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client/assets/provider-icons/auth_service_google.svg
-[debug] [2024-11-16T17:21:21.130Z] [unzip] Entry: client/assets/provider-icons/auth_service_oidc.svg (compressed_size=414 bytes, uncompressed_size=858 bytes)
-[debug] [2024-11-16T17:21:21.130Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_oidc.svg
-[debug] [2024-11-16T17:21:21.130Z] [unzip] else mkdir: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client/assets/provider-icons
-[debug] [2024-11-16T17:21:21.130Z] [unzip] deflating: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client/assets/provider-icons/auth_service_oidc.svg
-[debug] [2024-11-16T17:21:21.130Z] [unzip] Entry: client/browserconfig.xml (compressed_size=491 bytes, uncompressed_size=822 bytes)
-[debug] [2024-11-16T17:21:21.130Z] [unzip] Processing entry: client/browserconfig.xml
-[debug] [2024-11-16T17:21:21.130Z] [unzip] else mkdir: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client
-[debug] [2024-11-16T17:21:21.130Z] [unzip] deflating: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client/browserconfig.xml
-[debug] [2024-11-16T17:21:21.130Z] [unzip] Entry: client/favicon-32x32.png (compressed_size=475 bytes, uncompressed_size=475 bytes)
-[debug] [2024-11-16T17:21:21.130Z] [unzip] Processing entry: client/favicon-32x32.png
-[debug] [2024-11-16T17:21:21.130Z] [unzip] else mkdir: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client
-[debug] [2024-11-16T17:21:21.130Z] [unzip] Writing file: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/client/favicon-32x32.png
-[debug] [2024-11-16T17:21:21.130Z] [unzip] Entry: server/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
-[debug] [2024-11-16T17:21:21.131Z] [unzip] Processing entry: server/
-[debug] [2024-11-16T17:21:21.131Z] [unzip] mkdir: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/server/
-[debug] [2024-11-16T17:21:21.131Z] [unzip] Entry: server/server.mjs.map (compressed_size=296496 bytes, uncompressed_size=1355667 bytes)
-[debug] [2024-11-16T17:21:21.131Z] [unzip] Processing entry: server/server.mjs.map
-[debug] [2024-11-16T17:21:21.131Z] [unzip] else mkdir: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/server
-[debug] [2024-11-16T17:21:21.131Z] [unzip] deflating: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/server/server.mjs.map
-[debug] [2024-11-16T17:21:21.134Z] [unzip] Entry: server/server.mjs (compressed_size=315701 bytes, uncompressed_size=1172682 bytes)
-[debug] [2024-11-16T17:21:21.134Z] [unzip] Processing entry: server/server.mjs
-[debug] [2024-11-16T17:21:21.134Z] [unzip] else mkdir: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/server
-[debug] [2024-11-16T17:21:21.134Z] [unzip] deflating: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/server/server.mjs
-[debug] [2024-11-16T17:21:21.137Z] [unzip] Entry: server/assets/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
-[debug] [2024-11-16T17:21:21.137Z] [unzip] Processing entry: server/assets/
-[debug] [2024-11-16T17:21:21.137Z] [unzip] mkdir: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/server/assets/
-[debug] [2024-11-16T17:21:21.137Z] [unzip] Entry: server/assets/multipart-parser-DGCUZdXu.mjs.map (compressed_size=4791 bytes, uncompressed_size=17918 bytes)
-[debug] [2024-11-16T17:21:21.137Z] [unzip] Processing entry: server/assets/multipart-parser-DGCUZdXu.mjs.map
-[debug] [2024-11-16T17:21:21.137Z] [unzip] else mkdir: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/server/assets
-[debug] [2024-11-16T17:21:21.137Z] [unzip] deflating: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/server/assets/multipart-parser-DGCUZdXu.mjs.map
-[debug] [2024-11-16T17:21:21.137Z] [unzip] Entry: server/assets/multipart-parser-DGCUZdXu.mjs (compressed_size=2621 bytes, uncompressed_size=10390 bytes)
-[debug] [2024-11-16T17:21:21.137Z] [unzip] Processing entry: server/assets/multipart-parser-DGCUZdXu.mjs
-[debug] [2024-11-16T17:21:21.137Z] [unzip] else mkdir: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/server/assets
-[debug] [2024-11-16T17:21:21.137Z] [unzip] deflating: /Users/jash/.cache/firebase/emulators/ui-v1.14.0/server/assets/multipart-parser-DGCUZdXu.mjs
-[debug] [2024-11-16T17:21:21.137Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
-[debug] [2024-11-16T17:21:21.138Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
-[debug] [2024-11-16T17:21:21.138Z] Starting Emulator UI with command {"binary":"node","args":["/Users/jash/.cache/firebase/emulators/ui-v1.14.0/server/server.mjs"],"optionalArgs":[],"joinArgs":false,"shell":false,"port":4000} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/Users/jash/.cache/firebase/emulators/ui-v1.14.0/server/server.mjs\"],\"optionalArgs\":[],\"joinArgs\":false,\"shell\":false,\"port\":4000}"}}
+[debug] [2024-11-19T06:08:08.296Z] defaultcredentials: writing to file /Users/jash/.config/firebase/electronjash_gmail_com_application_default_credentials.json
+[debug] [2024-11-19T06:08:08.298Z] Setting GAC to /Users/jash/.config/firebase/electronjash_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/jash/.config/firebase/electronjash_gmail_com_application_default_credentials.json"}}
+[debug] [2024-11-19T06:08:08.298Z] Checked if tokens are valid: true, expires at: 1731999779669
+[debug] [2024-11-19T06:08:08.298Z] Checked if tokens are valid: true, expires at: 1731999779669
+[debug] [2024-11-19T06:08:08.298Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/intellectworks-task1/adminSdkConfig [none]
+[debug] [2024-11-19T06:08:08.913Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/intellectworks-task1/adminSdkConfig 200
+[debug] [2024-11-19T06:08:08.914Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/intellectworks-task1/adminSdkConfig {"projectId":"intellectworks-task1","storageBucket":"intellectworks-task1.firebasestorage.app"}
+[debug] [2024-11-19T06:08:08.933Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-11-19T06:08:08.933Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2024-11-19T06:08:08.933Z] Starting Emulator UI with command {"binary":"node","args":["/Users/jash/.cache/firebase/emulators/ui-v1.14.0/server/server.mjs"],"optionalArgs":[],"joinArgs":false,"shell":false,"port":4000} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/Users/jash/.cache/firebase/emulators/ui-v1.14.0/server/server.mjs\"],\"optionalArgs\":[],\"joinArgs\":false,\"shell\":false,\"port\":4000}"}}
 [info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
-[debug] [2024-11-16T17:21:21.228Z] Web / API server started at 127.0.0.1:4000
+[debug] [2024-11-19T06:08:09.040Z] Web / API server started at 127.0.0.1:4000
  {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
-[debug] [2024-11-16T17:21:21.228Z] Web / API server started at ::1:4000
+[debug] [2024-11-19T06:08:09.040Z] Web / API server started at ::1:4000
  {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
 [info] i  functions: Watching "/Users/jash/Documents/Jash/VSCodeProjects/VSCodeProjectsLatest/IntellectworksTask1/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/jash/Documents/Jash/VSCodeProjects/VSCodeProjectsLatest/IntellectworksTask1/functions\" for Cloud Functions..."}}
-[debug] [2024-11-16T17:21:21.346Z] Validating nodejs source
-[debug] [2024-11-16T17:21:21.975Z] > [functions] package.json contents: {
+[debug] [2024-11-19T06:08:09.144Z] Validating nodejs source
+[debug] [2024-11-19T06:08:09.870Z] > [functions] package.json contents: {
   "name": "functions",
   "scripts": {
     "lint": "eslint --ext .js,.ts .",
@@ -213,10 +51,13 @@
   },
   "main": "lib/index.js",
   "dependencies": {
+    "axios": "^1.7.7",
+    "cookie-parser": "^1.4.7",
     "firebase-admin": "^12.6.0",
     "firebase-functions": "^6.0.1"
   },
   "devDependencies": {
+    "@types/cookie-parser": "^1.4.7",
     "@typescript-eslint/eslint-plugin": "^5.12.0",
     "@typescript-eslint/parser": "^5.12.0",
     "eslint": "^8.9.0",
@@ -227,17 +68,17 @@
   },
   "private": true
 }
-[debug] [2024-11-16T17:21:21.976Z] Building nodejs source
-[debug] [2024-11-16T17:21:21.976Z] Failed to find version of module node: reached end of search path /Users/jash/Documents/Jash/VSCodeProjects/VSCodeProjectsLatest/IntellectworksTask1/functions/node_modules
+[debug] [2024-11-19T06:08:09.870Z] Building nodejs source
+[debug] [2024-11-19T06:08:09.871Z] Failed to find version of module node: reached end of search path /Users/jash/Documents/Jash/VSCodeProjects/VSCodeProjectsLatest/IntellectworksTask1/functions/node_modules
 [warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "23". Using node@23 from host. 
-[debug] [2024-11-16T17:21:21.978Z] Could not find functions.yaml. Must use http discovery
-[debug] [2024-11-16T17:21:21.984Z] Found firebase-functions binary at '/Users/jash/Documents/Jash/VSCodeProjects/VSCodeProjectsLatest/IntellectworksTask1/functions/node_modules/.bin/firebase-functions'
-[info] Serving at port 8805
+[debug] [2024-11-19T06:08:09.872Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-11-19T06:08:09.879Z] Found firebase-functions binary at '/Users/jash/Documents/Jash/VSCodeProjects/VSCodeProjectsLatest/IntellectworksTask1/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8418
 
-[debug] [2024-11-16T17:21:22.732Z] Got response from /__/functions.yaml {"endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[debug] [2024-11-19T06:08:10.170Z] Got response from /__/functions.yaml {"endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
 [info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
 [info] ✔  functions[us-central1-api]: http function initialized (http://127.0.0.1:5001/intellectworks-task1/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/intellectworks-task1/us-central1/api)."}}
-[debug] [2024-11-16T17:21:26.761Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[debug] [2024-11-19T06:08:14.198Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
 [info] 
 ┌─────────────────────────────────────────────────────────────┐
 │ ✔  All emulators ready! It is now safe to connect your app. │
@@ -254,49 +95,36 @@
 
 Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
  
-[debug] [2024-11-16T17:21:51.556Z] [work-queue] {"queuedWork":["/intellectworks-task1/us-central1/api-2024-11-16T17:21:51.555Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
-[debug] [2024-11-16T17:21:51.557Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/intellectworks-task1/us-central1/api-2024-11-16T17:21:51.555Z"],"workRunningCount":1}
-[debug] [2024-11-16T17:21:51.558Z] Accepted request GET /intellectworks-task1/us-central1/api --> us-central1-api
-[debug] [2024-11-16T17:21:51.564Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
-[debug] [2024-11-16T17:21:51.565Z] [functions] Got req.url=/intellectworks-task1/us-central1/api, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/intellectworks-task1/us-central1/api, mapping to path=/"}}
-[debug] [2024-11-16T17:21:51.572Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
-[debug] [2024-11-16T17:21:51.573Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
-[info] >  (node:24724) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead. {"user":"(node:24724) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m (node:24724) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead."}}
+[debug] [2024-11-19T06:08:19.904Z] [work-queue] {"queuedWork":["/intellectworks-task1/us-central1/api/hello-world-2024-11-19T06:08:19.904Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-11-19T06:08:19.905Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/intellectworks-task1/us-central1/api/hello-world-2024-11-19T06:08:19.904Z"],"workRunningCount":1}
+[debug] [2024-11-19T06:08:19.905Z] Accepted request GET /intellectworks-task1/us-central1/api/hello-world --> us-central1-api
+[debug] [2024-11-19T06:08:19.908Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-11-19T06:08:19.909Z] [functions] Got req.url=/intellectworks-task1/us-central1/api/hello-world, mapping to path=/hello-world {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/intellectworks-task1/us-central1/api/hello-world, mapping to path=/hello-world"}}
+[debug] [2024-11-19T06:08:19.912Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2024-11-19T06:08:19.913Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[info] >  (node:64666) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead. {"user":"(node:64666) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m (node:64666) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead."}}
 [info] >  (Use `node --trace-deprecation ...` to show where the warning was created) {"user":"(Use `node --trace-deprecation ...` to show where the warning was created)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m (Use `node --trace-deprecation ...` to show where the warning was created)"}}
-[debug] [2024-11-16T17:21:52.350Z] [runtime-status] [24724] Resolved module firebase-admin {"declared":true,"installed":true,"version":"12.7.0","resolution":"/Users/jash/Documents/Jash/VSCodeProjects/VSCodeProjectsLatest/IntellectworksTask1/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [24724] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"12.7.0\",\"resolution\":\"/Users/jash/Documents/Jash/VSCodeProjects/VSCodeProjectsLatest/IntellectworksTask1/functions/node_modules/firebase-admin/lib/index.js\"}"}}
-[debug] [2024-11-16T17:21:52.351Z] [runtime-status] [24724] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.1.0","resolution":"/Users/jash/Documents/Jash/VSCodeProjects/VSCodeProjectsLatest/IntellectworksTask1/functions/node_modules/firebase-functions/lib/v2/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [24724] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.1.0\",\"resolution\":\"/Users/jash/Documents/Jash/VSCodeProjects/VSCodeProjectsLatest/IntellectworksTask1/functions/node_modules/firebase-functions/lib/v2/index.js\"}"}}
-[debug] [2024-11-16T17:21:52.351Z] [runtime-status] [24724] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [24724] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
-[debug] [2024-11-16T17:21:52.351Z] [runtime-status] [24724] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.1.0","resolution":"/Users/jash/Documents/Jash/VSCodeProjects/VSCodeProjectsLatest/IntellectworksTask1/functions/node_modules/firebase-functions/lib/v2/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [24724] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.1.0\",\"resolution\":\"/Users/jash/Documents/Jash/VSCodeProjects/VSCodeProjectsLatest/IntellectworksTask1/functions/node_modules/firebase-functions/lib/v2/index.js\"}"}}
-[debug] [2024-11-16T17:21:52.494Z] [runtime-status] [24724] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [24724] Checked functions.config() {\"config\":{}}"}}
-[debug] [2024-11-16T17:21:52.494Z] [runtime-status] [24724] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"6.1.0","resolution":"/Users/jash/Documents/Jash/VSCodeProjects/VSCodeProjectsLatest/IntellectworksTask1/functions/node_modules/firebase-functions/lib/v2/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [24724] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"6.1.0\",\"resolution\":\"/Users/jash/Documents/Jash/VSCodeProjects/VSCodeProjectsLatest/IntellectworksTask1/functions/node_modules/firebase-functions/lib/v2/index.js\"}}"}}
-[debug] [2024-11-16T17:21:52.495Z] [runtime-status] [24724] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.1.0","resolution":"/Users/jash/Documents/Jash/VSCodeProjects/VSCodeProjectsLatest/IntellectworksTask1/functions/node_modules/firebase-functions/lib/v2/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [24724] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.1.0\",\"resolution\":\"/Users/jash/Documents/Jash/VSCodeProjects/VSCodeProjectsLatest/IntellectworksTask1/functions/node_modules/firebase-functions/lib/v2/index.js\"}"}}
-[debug] [2024-11-16T17:21:52.496Z] [runtime-status] [24724] Resolved module firebase-admin {"declared":true,"installed":true,"version":"12.7.0","resolution":"/Users/jash/Documents/Jash/VSCodeProjects/VSCodeProjectsLatest/IntellectworksTask1/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [24724] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"12.7.0\",\"resolution\":\"/Users/jash/Documents/Jash/VSCodeProjects/VSCodeProjectsLatest/IntellectworksTask1/functions/node_modules/firebase-admin/lib/index.js\"}"}}
-[debug] [2024-11-16T17:21:52.497Z] [runtime-status] [24724] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.1.0","resolution":"/Users/jash/Documents/Jash/VSCodeProjects/VSCodeProjectsLatest/IntellectworksTask1/functions/node_modules/firebase-functions/lib/v2/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [24724] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.1.0\",\"resolution\":\"/Users/jash/Documents/Jash/VSCodeProjects/VSCodeProjectsLatest/IntellectworksTask1/functions/node_modules/firebase-functions/lib/v2/index.js\"}"}}
-[debug] [2024-11-16T17:21:52.498Z] [runtime-status] [24724] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"12.7.0","resolution":"/Users/jash/Documents/Jash/VSCodeProjects/VSCodeProjectsLatest/IntellectworksTask1/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [24724] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"12.7.0\",\"resolution\":\"/Users/jash/Documents/Jash/VSCodeProjects/VSCodeProjectsLatest/IntellectworksTask1/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
-[debug] [2024-11-16T17:21:52.546Z] [runtime-status] [24724] Functions runtime initialized. {"cwd":"/Users/jash/Documents/Jash/VSCodeProjects/VSCodeProjectsLatest/IntellectworksTask1/functions","node_version":"23.2.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [24724] Functions runtime initialized. {\"cwd\":\"/Users/jash/Documents/Jash/VSCodeProjects/VSCodeProjectsLatest/IntellectworksTask1/functions\",\"node_version\":\"23.2.0\"}"}}
-[debug] [2024-11-16T17:21:52.547Z] [runtime-status] [24724] Listening to port: /var/folders/0q/bhv27mbn5td9vdjj77y39n0w0000gn/T/fire_emu_cc1bb87289ffa256.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [24724] Listening to port: /var/folders/0q/bhv27mbn5td9vdjj77y39n0w0000gn/T/fire_emu_cc1bb87289ffa256.sock"}}
-[debug] [2024-11-16T17:21:52.586Z] [worker-us-central1-api-4dea6e0d-8bc1-4346-9d33-e9d32b537b2f]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-4dea6e0d-8bc1-4346-9d33-e9d32b537b2f]: IDLE"}}
-[debug] [2024-11-16T17:21:52.586Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[debug] [2024-11-19T06:08:20.663Z] [runtime-status] [64666] Resolved module firebase-admin {"declared":true,"installed":true,"version":"12.7.0","resolution":"/Users/jash/Documents/Jash/VSCodeProjects/VSCodeProjectsLatest/IntellectworksTask1/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [64666] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"12.7.0\",\"resolution\":\"/Users/jash/Documents/Jash/VSCodeProjects/VSCodeProjectsLatest/IntellectworksTask1/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2024-11-19T06:08:20.663Z] [runtime-status] [64666] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.1.0","resolution":"/Users/jash/Documents/Jash/VSCodeProjects/VSCodeProjectsLatest/IntellectworksTask1/functions/node_modules/firebase-functions/lib/v2/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [64666] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.1.0\",\"resolution\":\"/Users/jash/Documents/Jash/VSCodeProjects/VSCodeProjectsLatest/IntellectworksTask1/functions/node_modules/firebase-functions/lib/v2/index.js\"}"}}
+[debug] [2024-11-19T06:08:20.664Z] [runtime-status] [64666] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [64666] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2024-11-19T06:08:20.664Z] [runtime-status] [64666] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.1.0","resolution":"/Users/jash/Documents/Jash/VSCodeProjects/VSCodeProjectsLatest/IntellectworksTask1/functions/node_modules/firebase-functions/lib/v2/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [64666] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.1.0\",\"resolution\":\"/Users/jash/Documents/Jash/VSCodeProjects/VSCodeProjectsLatest/IntellectworksTask1/functions/node_modules/firebase-functions/lib/v2/index.js\"}"}}
+[debug] [2024-11-19T06:08:20.808Z] [runtime-status] [64666] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [64666] Checked functions.config() {\"config\":{}}"}}
+[debug] [2024-11-19T06:08:20.808Z] [runtime-status] [64666] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"6.1.0","resolution":"/Users/jash/Documents/Jash/VSCodeProjects/VSCodeProjectsLatest/IntellectworksTask1/functions/node_modules/firebase-functions/lib/v2/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [64666] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"6.1.0\",\"resolution\":\"/Users/jash/Documents/Jash/VSCodeProjects/VSCodeProjectsLatest/IntellectworksTask1/functions/node_modules/firebase-functions/lib/v2/index.js\"}}"}}
+[debug] [2024-11-19T06:08:20.809Z] [runtime-status] [64666] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.1.0","resolution":"/Users/jash/Documents/Jash/VSCodeProjects/VSCodeProjectsLatest/IntellectworksTask1/functions/node_modules/firebase-functions/lib/v2/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [64666] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.1.0\",\"resolution\":\"/Users/jash/Documents/Jash/VSCodeProjects/VSCodeProjectsLatest/IntellectworksTask1/functions/node_modules/firebase-functions/lib/v2/index.js\"}"}}
+[debug] [2024-11-19T06:08:20.810Z] [runtime-status] [64666] Resolved module firebase-admin {"declared":true,"installed":true,"version":"12.7.0","resolution":"/Users/jash/Documents/Jash/VSCodeProjects/VSCodeProjectsLatest/IntellectworksTask1/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [64666] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"12.7.0\",\"resolution\":\"/Users/jash/Documents/Jash/VSCodeProjects/VSCodeProjectsLatest/IntellectworksTask1/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2024-11-19T06:08:20.811Z] [runtime-status] [64666] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.1.0","resolution":"/Users/jash/Documents/Jash/VSCodeProjects/VSCodeProjectsLatest/IntellectworksTask1/functions/node_modules/firebase-functions/lib/v2/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [64666] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.1.0\",\"resolution\":\"/Users/jash/Documents/Jash/VSCodeProjects/VSCodeProjectsLatest/IntellectworksTask1/functions/node_modules/firebase-functions/lib/v2/index.js\"}"}}
+[debug] [2024-11-19T06:08:20.811Z] [runtime-status] [64666] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"12.7.0","resolution":"/Users/jash/Documents/Jash/VSCodeProjects/VSCodeProjectsLatest/IntellectworksTask1/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [64666] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"12.7.0\",\"resolution\":\"/Users/jash/Documents/Jash/VSCodeProjects/VSCodeProjectsLatest/IntellectworksTask1/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2024-11-19T06:08:20.880Z] [runtime-status] [64666] initializeApp(DEFAULT) {"credential":{"implicit":false,"projectId":"intellectworks-task1","privateKey":"-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCbh9s9XEvjZtBs\nmwseN3+4deIP9Nd6s+XZwoZVTuHoX3pvFrhWR/YMMPcCUQVkYB0UUWspARoJMuiw\niK6+lvkvDdAMniVNgZJMb1YWSBcJsia4vIMYdrWf1ggz9DK921gfbsAsumMcWCpP\n3UCKbBKHairE0Bhs3gUWztp/9UMLVN9/2r5eYKTX94NaHWTVQqkNt4tXJUEc/3Vx\n17jb/ioHbhPZXpkhu8kuTuB6tXf5i4imjdN84Eh0/KbF9DLC0emZ18LKdXymp+XI\nEvDmMWFfCnfzYxM+GW9vb2KrT8qST4txxzFhvBtNgHtiwVkvmp27lJVDhRzuCxhJ\nblySNsURAgMBAAECggEABIVZcRoqtox5iH6lPxab5s++Z3pVfSKXjtHht78YP/nu\nhCYj65Yh587Qj0etoXJNxhZryABZMmVBcEg41B9tVNnQ71z1dqBKkWA3H2SvDsAX\n8gzAvshMlT3SdTgm9W/XyuocOfCdCujhKfsjciKcE0WZwqjN3PRDL5uJrGiDr2OX\nksRGJP5AQs3fV+QVpQyobmS7Ska2Hx/N/JpTRYEK71icq2nkuSHdrALQKPZb6k7G\nbAPtCJf5nnoh7Vhh1ot6xjTwNVnNrU1r0nYdA81rp01LRLQNfA1OclanOhngfGXP\n6eZsvOQv4Rcevpa3+/uX/K9Ft8ojiSrZS3fGU3Xz9QKBgQDQ2UxC98QtIg8v9Qt3\neuodtuuUUk+SwRXXLC1fzr8fML0FZUaF7CJnLMp1msEZ6lAMScDx3zbVRcsIUgUH\n860yjHoGqFJcCsl50MSmonaxvHQAIt3hJtAL0PFfzDVbeKz3bWQx3K2hc4S/90nM\nNcaI1LGjbNQXZwfPlqwdJjXI8wKBgQC+pPbo4yGbcvd9wd8O7kLYEKB3n2AK1jYR\nP9hS5J7Mbr1q59tQwOAYPv/khZRMxNNgCSrPAExLNjcTCIU/pfq+nqxLFAaAAbfW\nR2gpfIPL5JO0JyeBXOzd0jdiUQvXep6jpO3dWAxbTypiobIQk8EA12XHok0hkoSi\nBUK+63766wKBgQCo28hpLOKUi0E0STAoPl0kAU2f8p0bzrnV64YUPJkSotlxj1zh\n0vZN7U0UoTcXuPdXuBokdZFkBrYN2CLxNvgGMsZGs7lDagVUVJNrF1hYhEJWCdrT\nvAniQ+GkzvslJgDTXMLx/bb1Hu1qOIqWbbRD1ZR6yfcBpPAPy4cFWmuKOQKBgFaj\n8fJ1Btj2rrNgYFcQwSAgrkyvCZ7jKz87nLxPWjveOAdVx74zaaSbPQBGFNeuu8Fx\naRsaL5Ie2Xi07pm2fPYUdojIWQvjvACOAzCXfe4zu0ysXq/T43IMD0+HNbJ/74i/\nc7qcQUFeAQ1CHwKZo6UWPxMzF4qiY9SeP28050hxAoGAbbAC7sQ0Bo0m5Fsg/prE\nBaxTBzvxbHYygpMfgLlzACiiP/o9FJnkXyp+E/zMmqWvpfjtVcFBIjyk6ApsO+FS\nBlM+NE7Z6o+/6izoAHTwnrpz5+zJWLFIhbidgF8fgApQazG2n7BnNl1FFO1P79hN\nNvJEJsspbjwBt7CPFZkU8Z0=\n-----END PRIVATE KEY-----\n","clientEmail":"firebase-adminsdk-rkxxq@intellectworks-task1.iam.gserviceaccount.com","httpClient":{"retry":{"maxRetries":4,"statusCodes":[503],"ioErrorCodes":["ECONNRESET","ETIMEDOUT"],"backOffFactor":0.5,"maxDelayInMillis":60000}}}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [64666] initializeApp(DEFAULT) {\"credential\":{\"implicit\":false,\"projectId\":\"intellectworks-task1\",\"privateKey\":\"-----BEGIN PRIVATE KEY-----\\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCbh9s9XEvjZtBs\\nmwseN3+4deIP9Nd6s+XZwoZVTuHoX3pvFrhWR/YMMPcCUQVkYB0UUWspARoJMuiw\\niK6+lvkvDdAMniVNgZJMb1YWSBcJsia4vIMYdrWf1ggz9DK921gfbsAsumMcWCpP\\n3UCKbBKHairE0Bhs3gUWztp/9UMLVN9/2r5eYKTX94NaHWTVQqkNt4tXJUEc/3Vx\\n17jb/ioHbhPZXpkhu8kuTuB6tXf5i4imjdN84Eh0/KbF9DLC0emZ18LKdXymp+XI\\nEvDmMWFfCnfzYxM+GW9vb2KrT8qST4txxzFhvBtNgHtiwVkvmp27lJVDhRzuCxhJ\\nblySNsURAgMBAAECggEABIVZcRoqtox5iH6lPxab5s++Z3pVfSKXjtHht78YP/nu\\nhCYj65Yh587Qj0etoXJNxhZryABZMmVBcEg41B9tVNnQ71z1dqBKkWA3H2SvDsAX\\n8gzAvshMlT3SdTgm9W/XyuocOfCdCujhKfsjciKcE0WZwqjN3PRDL5uJrGiDr2OX\\nksRGJP5AQs3fV+QVpQyobmS7Ska2Hx/N/JpTRYEK71icq2nkuSHdrALQKPZb6k7G\\nbAPtCJf5nnoh7Vhh1ot6xjTwNVnNrU1r0nYdA81rp01LRLQNfA1OclanOhngfGXP\\n6eZsvOQv4Rcevpa3+/uX/K9Ft8ojiSrZS3fGU3Xz9QKBgQDQ2UxC98QtIg8v9Qt3\\neuodtuuUUk+SwRXXLC1fzr8fML0FZUaF7CJnLMp1msEZ6lAMScDx3zbVRcsIUgUH\\n860yjHoGqFJcCsl50MSmonaxvHQAIt3hJtAL0PFfzDVbeKz3bWQx3K2hc4S/90nM\\nNcaI1LGjbNQXZwfPlqwdJjXI8wKBgQC+pPbo4yGbcvd9wd8O7kLYEKB3n2AK1jYR\\nP9hS5J7Mbr1q59tQwOAYPv/khZRMxNNgCSrPAExLNjcTCIU/pfq+nqxLFAaAAbfW\\nR2gpfIPL5JO0JyeBXOzd0jdiUQvXep6jpO3dWAxbTypiobIQk8EA12XHok0hkoSi\\nBUK+63766wKBgQCo28hpLOKUi0E0STAoPl0kAU2f8p0bzrnV64YUPJkSotlxj1zh\\n0vZN7U0UoTcXuPdXuBokdZFkBrYN2CLxNvgGMsZGs7lDagVUVJNrF1hYhEJWCdrT\\nvAniQ+GkzvslJgDTXMLx/bb1Hu1qOIqWbbRD1ZR6yfcBpPAPy4cFWmuKOQKBgFaj\\n8fJ1Btj2rrNgYFcQwSAgrkyvCZ7jKz87nLxPWjveOAdVx74zaaSbPQBGFNeuu8Fx\\naRsaL5Ie2Xi07pm2fPYUdojIWQvjvACOAzCXfe4zu0ysXq/T43IMD0+HNbJ/74i/\\nc7qcQUFeAQ1CHwKZo6UWPxMzF4qiY9SeP28050hxAoGAbbAC7sQ0Bo0m5Fsg/prE\\nBaxTBzvxbHYygpMfgLlzACiiP/o9FJnkXyp+E/zMmqWvpfjtVcFBIjyk6ApsO+FS\\nBlM+NE7Z6o+/6izoAHTwnrpz5+zJWLFIhbidgF8fgApQazG2n7BnNl1FFO1P79hN\\nNvJEJsspbjwBt7CPFZkU8Z0=\\n-----END PRIVATE KEY-----\\n\",\"clientEmail\":\"firebase-adminsdk-rkxxq@intellectworks-task1.iam.gserviceaccount.com\",\"httpClient\":{\"retry\":{\"maxRetries\":4,\"statusCodes\":[503],\"ioErrorCodes\":[\"ECONNRESET\",\"ETIMEDOUT\"],\"backOffFactor\":0.5,\"maxDelayInMillis\":60000}}}}"}}
+[warn] ⚠  functions: The Cloud Firestore emulator is not running, so calls to Firestore will affect production. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"The Cloud Firestore emulator is not running, so calls to Firestore will affect production."}}
+[debug] [2024-11-19T06:08:20.884Z] [runtime-status] [64666] Functions runtime initialized. {"cwd":"/Users/jash/Documents/Jash/VSCodeProjects/VSCodeProjectsLatest/IntellectworksTask1/functions","node_version":"23.2.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [64666] Functions runtime initialized. {\"cwd\":\"/Users/jash/Documents/Jash/VSCodeProjects/VSCodeProjectsLatest/IntellectworksTask1/functions\",\"node_version\":\"23.2.0\"}"}}
+[debug] [2024-11-19T06:08:20.884Z] [runtime-status] [64666] Listening to port: /var/folders/0q/bhv27mbn5td9vdjj77y39n0w0000gn/T/fire_emu_94960b472bac2b52.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [64666] Listening to port: /var/folders/0q/bhv27mbn5td9vdjj77y39n0w0000gn/T/fire_emu_94960b472bac2b52.sock"}}
+[debug] [2024-11-19T06:08:20.929Z] [worker-us-central1-api-e16c7c7e-059f-4773-b701-cf346997b3f1]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-e16c7c7e-059f-4773-b701-cf346997b3f1]: IDLE"}}
+[debug] [2024-11-19T06:08:20.929Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
 [info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
-[debug] [2024-11-16T17:21:52.587Z] [worker-us-central1-api-4dea6e0d-8bc1-4346-9d33-e9d32b537b2f]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-4dea6e0d-8bc1-4346-9d33-e9d32b537b2f]: BUSY"}}
-[debug] [2024-11-16T17:21:52.590Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
-[info] i  functions: Finished "us-central1-api" in 3.255291ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 3.255291ms"}}
-[debug] [2024-11-16T17:21:52.590Z] [worker-us-central1-api-4dea6e0d-8bc1-4346-9d33-e9d32b537b2f]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-4dea6e0d-8bc1-4346-9d33-e9d32b537b2f]: IDLE"}}
-[debug] [2024-11-16T17:21:52.590Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
-[debug] [2024-11-16T17:21:52.590Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
-[debug] [2024-11-16T17:21:52.590Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
-[debug] [2024-11-16T17:21:58.323Z] [work-queue] {"queuedWork":["/intellectworks-task1/us-central1/api/hello-world-2024-11-16T17:21:58.323Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
-[debug] [2024-11-16T17:21:58.323Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/intellectworks-task1/us-central1/api/hello-world-2024-11-16T17:21:58.323Z"],"workRunningCount":1}
-[debug] [2024-11-16T17:21:58.324Z] Accepted request GET /intellectworks-task1/us-central1/api/hello-world --> us-central1-api
-[debug] [2024-11-16T17:21:58.327Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
-[debug] [2024-11-16T17:21:58.328Z] [functions] Got req.url=/intellectworks-task1/us-central1/api/hello-world, mapping to path=/hello-world {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/intellectworks-task1/us-central1/api/hello-world, mapping to path=/hello-world"}}
-[debug] [2024-11-16T17:21:58.328Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
-[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
-[debug] [2024-11-16T17:21:58.328Z] [worker-us-central1-api-4dea6e0d-8bc1-4346-9d33-e9d32b537b2f]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-4dea6e0d-8bc1-4346-9d33-e9d32b537b2f]: BUSY"}}
-[debug] [2024-11-16T17:21:58.334Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
-[info] i  functions: Finished "us-central1-api" in 5.72225ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 5.72225ms"}}
-[debug] [2024-11-16T17:21:58.335Z] [worker-us-central1-api-4dea6e0d-8bc1-4346-9d33-e9d32b537b2f]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-4dea6e0d-8bc1-4346-9d33-e9d32b537b2f]: IDLE"}}
-[debug] [2024-11-16T17:21:58.335Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
-[debug] [2024-11-16T17:21:58.335Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
-[debug] [2024-11-16T17:21:58.336Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
-[debug] [2024-11-16T17:21:58.356Z] Functions emulator received unknown request at path /favicon.ico
+[debug] [2024-11-19T06:08:20.929Z] [worker-us-central1-api-e16c7c7e-059f-4773-b701-cf346997b3f1]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-e16c7c7e-059f-4773-b701-cf346997b3f1]: BUSY"}}
+[debug] [2024-11-19T06:08:20.933Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 4.083375ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 4.083375ms"}}
+[debug] [2024-11-19T06:08:20.933Z] [worker-us-central1-api-e16c7c7e-059f-4773-b701-cf346997b3f1]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-e16c7c7e-059f-4773-b701-cf346997b3f1]: IDLE"}}
+[debug] [2024-11-19T06:08:20.933Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-11-19T06:08:20.934Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-11-19T06:08:20.934Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
