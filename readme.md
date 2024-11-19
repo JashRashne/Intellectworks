@@ -45,7 +45,7 @@ This repository contains the backend logic for your application, implemented usi
 
 ## API Routes
 
-### 1. `POST /createUser`
+### 1. `POST /register`
 
 Creates a new user in the system.
 
@@ -61,44 +61,69 @@ Creates a new user in the system.
 
 ---
 
-### 2. `GET /getUser/:userId`
+### 2. `POST /login`
 
-Fetches details of a user by their unique ID.
-
-#### Sample Request
-
-```plaintext
-GET /getUser/12345
-```
-
----
-
-### 3. `PUT /updateUser/:userId`
-
-Updates user details for a given ID.
+Logs the user in.
 
 #### Sample Request
 
 ```json
 {
-  "email": "john.updated@example.com",
-  "password": "newsecurepassword456"
+  "email": "john.doe@example.com",
+  "password": "securepassword123"
 }
 ```
 
 ---
 
-### 4. `DELETE /deleteUser/:userId`
+### 3. `POST /logout`
 
-Deletes a user from the system by their ID.
+Logs the user out.
+
+---
+
+### 4. `POST /edit-user-details`
+
+Edits the user details in firestore
 
 #### Sample Request
 
-```plaintext
-DELETE /deleteUser/12345
+```json
+{
+  "name": "John",
+}
 ```
 
 ---
+
+### 5. `POST /delete-user`
+
+Edits the user details in firestore
+
+---
+
+### 5. `POST /save-new-note`
+
+Saves a new note in firestore in the logged in user
+
+#### Sample Request
+
+```json
+{
+    "title" : "Test Title",
+    "content" : "This is a new note.",
+    "tags" : ["tag1", "tag2"]
+}
+```
+
+---
+
+### 5. `POST /get-notes`
+
+Gets all notes from firestore from the logged in user
+
+---
+
 
 ## Notes
 
@@ -108,5 +133,3 @@ DELETE /deleteUser/12345
 
 ---
 ```
-
-Save this content into a file named `README.md` in your repository.
