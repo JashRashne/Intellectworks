@@ -1,5 +1,4 @@
 import * as admin from 'firebase-admin';
-// import { Request, Response, NextFunction } from 'express';
 
 
 const validateFirebaseIdToken = async (req: any, res: any, next: any) => {
@@ -50,9 +49,7 @@ const validateFirebaseIdToken = async (req: any, res: any, next: any) => {
     req.user = decodedIdToken;
     req.idToken = idToken;
 
-    // console.log(idToken);
 
-    // Proceed to the next middleware/handler
     next();
   } catch (error) {
     console.error("Error while verifying Firebase ID token:", error);

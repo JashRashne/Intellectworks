@@ -2,14 +2,11 @@ import * as admin from "firebase-admin";
 import * as functions from "firebase-functions";
 import express from "express";
 import cors from "cors";
-// import axios from "axios";
-// import validateFirebaseIdToken from "./middlewares/auth.middleware";
-// import { CookieOptions } from 'express';
+
 import cookieParser from "cookie-parser"
 import userRouter from './routes/user.routes'
 
 
-// Ensure correct path for your service account JSON file
 const serviceAccount = require("../permissions.json");
 
 admin.initializeApp({
@@ -19,8 +16,7 @@ admin.initializeApp({
 const db = admin.firestore();
 const app = express();
 
-// Middleware to parse incoming JSON requests
-app.use(express.json()); // Add this line to parse JSON bodies
+app.use(express.json()); 
 app.use(cookieParser())
 app.use(cors({
     origin: "*",
@@ -30,8 +26,8 @@ app.use(cors({
 
 app.use('', userRouter)
 
+// Export the Express app as a Firebase Function
 export const api = functions.https.onRequest(app);
 export {app, db}
 
 
-// Export the Express app as a Firebase Function

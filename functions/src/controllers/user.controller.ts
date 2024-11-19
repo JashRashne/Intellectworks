@@ -21,11 +21,10 @@ const registerUser = async (req: any, res: any) => {
     }
   } catch (error) {
     console.error("Error checking user by email:", error);
-    return res.status(500).send("ERROR" + error); // In case of any errors
+    return res.status(500).send("ERROR" + error);
   }
 
   try {
-    // Use the correct sign-up endpoint for Firebase
     const registerResponse = await axios.post(
       "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyBULcEW64tKAYxYXkLNcznKDW8zsaYaKCQ",
       {
@@ -48,17 +47,15 @@ const registerUser = async (req: any, res: any) => {
 
     const options: CookieOptions = {
       httpOnly: true,
-      secure: false,
-      sameSite: "none", // Necessary for cross-origin requests
+      secure: false, //set to true in production and add secured routes in env
+      sameSite: "none",
     };
 
-    // Send the response data back to the client
     return res
       .status(200)
       .cookie("__session", idToken, options)
       .send({ message: "User registered successfully." });
   } catch (err: any) {
-    // Log the error in more detail for better debugging
     console.error(
       "Error during registration:",
       err.response ? err.response.data : err.message
@@ -86,7 +83,7 @@ const loginUser = async (req: any, res: any) => {
     }
   } catch (error) {
     console.error("Error checking user by email:", error);
-    return res.status(500).send("ERROR" + error); // In case of any errors
+    return res.status(500).send("ERROR" + error);
   }
 
   try {
@@ -104,18 +101,17 @@ const loginUser = async (req: any, res: any) => {
 
     const options: CookieOptions = {
       httpOnly: true,
-      secure: false,
-      sameSite: "none", // Necessary for cross-origin requests
+      secure: false, //set to true in prod and set necessary allowed origins in env
+      sameSite: "none",
     };
 
-    // Send the response data back to the client
     return res
       .status(200)
       .cookie("__session", idToken, options)
       .send({ message: "User Logged In Successfully" });
   } catch (error) {
     console.error("Error checking user by email:", error);
-    return res.status(500).send("ERROR" + error); // In case of any errors
+    return res.status(500).send("ERROR" + error);
   }
 };
 
@@ -126,8 +122,8 @@ const logoutUser = async (req: any, res: any) => {
 
   const options: CookieOptions = {
     httpOnly: true,
-    secure: false,
-    sameSite: "none", // Necessary for cross-origin requests
+    secure: false, //set to true in prod
+    sameSite: "none",
   };
 
   res.status(200).clearCookie("__session", options).send("User Logged Out");
@@ -140,10 +136,8 @@ const editUser = async (req: any, res: any) => {
 
   const userId = req.user.uid;
   try {
-    // Reference to the user document in Firestore
     const userRef = db.collection("users").doc(userId);
 
-    // Update the name field in Firestore
     await userRef.update({
       name: req.body.newName,
     });
@@ -156,19 +150,16 @@ const editUser = async (req: any, res: any) => {
 };
 
 const deleteUser = async (req: any, res: any) => {
-  // Check if the user is logged in (either by `user` or `idToken`)
   if (!req.user || !req.idToken) {
     return res.status(400).send("User not logged in.");
   }
 
   try {
-    // Call Firebase API to delete the user
     const deleteResponse = await axios.post(
       `https://identitytoolkit.googleapis.com/v1/accounts:delete?key=AIzaSyBULcEW64tKAYxYXkLNcznKDW8zsaYaKCQ`,
       { idToken: req.idToken }
     );
 
-    // Check if the response was successful and return an appropriate message
     if (deleteResponse.status === 200) {
       await db
         .collection("users")
@@ -185,8 +176,8 @@ const deleteUser = async (req: any, res: any) => {
 
       const options: CookieOptions = {
         httpOnly: true,
-        secure: false,
-        sameSite: "none", // Necessary for cross-origin requests
+        secure: false, //set to true in prod and set necessary allowed origins in envs
+        sameSite: "none",
       };
 
       return res
@@ -197,18 +188,12 @@ const deleteUser = async (req: any, res: any) => {
       return res.status(500).send("Failed to delete user.");
     }
   } catch (error: any) {
-    // Log the error and send a proper response
-    console.error("Error deleting user:", error.message); // Log only the error message
-
-    // Handle the error safely
+    console.error("Error deleting user:", error.message);
     if (error.response) {
-      // If the error has a response (i.e., API error), return that status and message
       return res.status(error.response.status).send(error.response.data);
     } else if (error.request) {
-      // Handle network errors (request was made but no response received)
       return res.status(500).send("Network error: Failed to reach the server.");
     } else {
-      // Handle other types of errors (e.g., invalid idToken format)
       return res.status(500).send("Failed to delete user.");
     }
   }
@@ -223,14 +208,11 @@ const saveNewNote = async (req: any, res: any) => {
   const userRef = db.collection("users").doc(req.user.uid);
 
   try {
-    // Attempt to get the user's document
     const doc = await userRef.get();
 
     if (doc.exists) {
-      // Extract notes from the document data
       const data = doc.data();
-      let notes = data?.notes || []; // Default to an empty array if no notes field exists
-
+      let notes = data?.notes || [];
       notes.push({
         title,
         content,
@@ -242,8 +224,7 @@ const saveNewNote = async (req: any, res: any) => {
         notes: notes,
       });
 
-      // Respond with the user's notes
-      return res.status(200).json({ notes });
+      return res.status(200).send({ message: "New note added successfully" });
     } else {
       console.log("No such document!");
       return res.status(404).send("User data not found.");
@@ -264,15 +245,12 @@ const getAllNotes = async (req: any, res: any) => {
   const userRef = db.collection("users").doc(req.user.uid);
 
   try {
-    // Attempt to get the user's document
     const doc = await userRef.get();
 
     if (doc.exists) {
-      // Extract notes from the document data
       const data = doc.data();
-      let notes = data?.notes || []; // Default to an empty array if no notes field exists
+      let notes = data?.notes || [];
 
-      // Respond with the user's notes
       return res.status(200).json({ notes });
     } else {
       console.log("No such document!");
