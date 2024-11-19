@@ -98,7 +98,7 @@ Edits the user details in firestore
 
 ### 5. `POST /delete-user`
 
-Edits the user details in firestore
+Deletes the logged in user.
 
 ---
 
@@ -132,4 +132,3 @@ Gets all notes from firestore from the logged in user
 - All API calls should be made to the Base URL followed by the respective route.
 
 ---
-```
