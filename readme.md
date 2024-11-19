@@ -1,5 +1,5 @@
 
-```markdown
+
 # Firebase Functions Backend
 
 This repository contains the backend logic for your application, implemented using Firebase Functions. Follow the instructions below to set up and use the backend.
