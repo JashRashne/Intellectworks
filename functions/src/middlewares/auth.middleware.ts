@@ -44,10 +44,13 @@ const validateFirebaseIdToken = async (req: any, res: any, next: any) => {
 
     // Verify the ID token with Firebase
     const decodedIdToken = await admin.auth().verifyIdToken(idToken);
-    console.log("ID Token correctly decoded", decodedIdToken);
+    // console.log("ID Token correctly decoded", decodedIdToken);
 
     // Attach decoded token to the request object
     req.user = decodedIdToken;
+    req.idToken = idToken;
+
+    // console.log(idToken);
 
     // Proceed to the next middleware/handler
     next();
